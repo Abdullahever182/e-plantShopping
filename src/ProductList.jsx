@@ -10,7 +10,6 @@ function ProductList({ onHomeClick }) {
 
     const CartItems = useSelector((state) => state.cart.items);
 
-    const cart = useSelector((state) => state.cart.items);
 const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 const dispatch = useDispatch();
 
