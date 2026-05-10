@@ -51,7 +51,7 @@ const handleIncrement = (item) => {
   const handleRemove = (item) => {
     dispatch(removeItem(item.name));
   };
-  
+
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
     const cost = parseFloat(item.cost.substring(1));
@@ -85,7 +85,9 @@ const handleIncrement = (item) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button className="get-started-button1" onClick={handleCheckoutShopping}>
+  Checkout
+</button>
       </div>
     </div>
   );
